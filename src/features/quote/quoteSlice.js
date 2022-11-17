@@ -1,7 +1,18 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import quotesApi from "../../api/quotes";
 
-export const getQuote = createAsyncThunk("quote/getQuote", quotesApi.getQuote);
+export const getQuote = createAsyncThunk(
+  "quote/getQuote", 
+  async () => {
+    const response = await fetch(`https://quotes.rest/qod?language=en`);
+    const json = await response.json();
+    const quote = json.contents.quotes[0];
+  
+    return {
+      quote: quote.quote,
+      author: quote.author
+    };
+  }
+);
 
 export const quoteSlice = createSlice({
   name: "quote",

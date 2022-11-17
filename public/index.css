@@ -62,36 +62,17 @@ body {
 }
 
 .quote-author {
-  opacity: 0.75;
   margin: 0;
+  color: #ffcc5c;
+  font-weight: bold;
 }
 
 .quote-message {
   margin: 0;
   margin-bottom: 4px;
-}
-
-#error-message-container {
-  background: #e63946;
-  display: flex;
-  justify-content: center;
-  padding: 8px 16px;
-  align-items: center;
-  margin-top: -12px;
-}
-
-#error-message-container button {
-  margin-left: auto;
-  border: 2px solid white;
-  background: none;
-  color: white;
-  border-radius: 50%;
-  height: 16px;
-  width: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
+  color: #87bdd8;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 .App {
@@ -129,7 +110,6 @@ footer {
 
 .surface {
   background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -148,7 +128,7 @@ footer {
   display: block;
   background: 0;
   border: 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid  #bd5734;
   color: #fff;
   font-size: 2.25em;
   line-height: 1.2;
@@ -162,12 +142,11 @@ footer {
 }
 
 h2 {
-  color: #fff;
-  font-size: 36px;
-  font-weight: 700;
+  color: #87bdd8;
+  font-size: 46px;
+  font-weight: bold;
   letter-spacing: -1.8px;
   line-height: 46px;
-  text-shadow: 0 2px 4px rgba(71, 97, 206, 0.36);
   position: relative;
   top: 4px;
 }
@@ -205,27 +184,23 @@ p {
 .surface-styles {
   backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-weight: bold;
 }
 
 .surface-blue {
-  background: rgba(69, 123, 157, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: #87bdd8;
 }
 
 .surface-red {
-  background: rgba(230, 57, 70, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: #bd5734;
 }
 
 .surface-green {
-  background: rgba(88, 129, 87, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: #86af49;
 }
 
 .surface-orange {
-  background: rgba(247, 127, 0, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: #ffcc5c;
 }
 
 .entry-actions-container {
@@ -265,13 +240,11 @@ p {
 }
 
 .remove {
-  background: rgba(208, 2, 27, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: #c94c4c
 }
 
 .done {
-  background: rgba(80, 227, 194, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: #86af49;
 }
 
 .entry-done {
@@ -285,10 +258,10 @@ p {
   border: none;
   background: none;
   outline: none;
-  color: white;
-  font-size: 64px;
+  color: #bd5734;
+  font-size: 84px;
+  font-weight: bold;
   cursor: pointer;
-  font-weight: 200;
   opacity: 0.5;
   transition: opacity 0.1s ease-in;
 }

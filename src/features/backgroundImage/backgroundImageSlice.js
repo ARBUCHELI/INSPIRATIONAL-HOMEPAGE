@@ -1,9 +1,12 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import unsplashApi from "../../api/unsplash";
 
 export const getBackgroundImage = createAsyncThunk(
   "backgroundImage/getImage",
-  unsplashApi.getImage
+  async () => {
+    const response = await fetch(`https://api.unsplash.com/search/photos?query=mountain&page=1&per_page=5&client_id=${process.env.REACT_APP_UNSPLASH_ACCESS_KEY}`);
+    const json = await response.json();
+    return json.results.map((result) => result.urls.full);
+  }
 );
 
 export const backgroundImageSlice = createSlice({

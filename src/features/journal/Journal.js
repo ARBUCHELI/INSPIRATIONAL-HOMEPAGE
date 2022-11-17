@@ -22,7 +22,7 @@ const Journal = () => {
   return (
     <>
       <div id="journal" className="surface">
-        <h2>What's on your mind today?</h2>
+        <h2>What do you want to do today?</h2>
 
         <form onSubmit={onFormSubmit}>
           <input
