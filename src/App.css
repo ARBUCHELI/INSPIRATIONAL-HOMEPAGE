@@ -26,6 +26,31 @@
   color: rgb(112, 76, 182);
 }
 
+@media (max-width: 541px) {
+  .app-header {
+    font-size: 34px;
+  }
+}
+
+
+@media (max-width: 415px) {
+  .app-header {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 376px) {
+  .app-header {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 281px) {
+  .app-header {
+    font-size: 24px;
+  }
+}
+
 @keyframes App-logo-float {
   0% {
     transform: translateY(0);
@@ -37,3 +62,4 @@
     transform: translateY(0px)
   }
 }
+

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import JournalEntries from "./components/JournalEntries";
 import { addJournalEntry } from "./journalSlice";
+import '../../App.css';
 
 const Journal = () => {
   const [newJournalEntry, setNewJournalEntry] = useState("");
@@ -22,7 +23,7 @@ const Journal = () => {
   return (
     <>
       <div id="journal" className="surface">
-        <h2>What do you want to do today?</h2>
+        <h2 className="app-header">What do you want to do today?</h2>
 
         <form onSubmit={onFormSubmit}>
           <input

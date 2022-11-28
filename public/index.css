@@ -286,3 +286,82 @@ p {
   justify-content: flex-end;
   margin-right: 16px;
 }
+
+@media (max-width: 541px) {
+  .entry {
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: fit-content;
+    padding: 0.5em 0.5em;
+    position: relative;
+    font-size: 13px;
+  }
+  .quote-message {
+    font-size: 13px;
+  }
+  .wallpaper-control button {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 415px) {
+  .entry {
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: fit-content;
+    padding: 0.5em 0.5em;
+    position: relative;
+    font-size: 13px;
+  }
+  .quote-message {
+    font-size: 13px;
+  }
+  .wallpaper-control button {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 376px) {
+  .app-header {
+    font-size: 24px;
+  }
+  .entry {
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: fit-content;
+    padding: 0.5em 0.5em;
+    position: relative;
+    font-size: 13px;
+  }
+  .quote-message {
+    font-size: 13px;
+  }
+  .wallpaper-control button {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 281px) {
+  .app-header {
+    font-size: 24px;
+  }
+  .entry {
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: fit-content;
+    padding: 0.5em 0.5em;
+    position: relative;
+    font-size: 9px;
+  }
+  .quote-message {
+    font-size: 13px;
+  }
+  .wallpaper-control button {
+    font-size: 54px;
+  }
+}
+
